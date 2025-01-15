@@ -1,0 +1,70 @@
+body{
+ font-family: "Roboto", serif;
+}
+.make-remote-work{
+ text-align: center;
+ font-size: 40px;
+ font-weight: 700;
+ margin-bottom: 20px;
+}
+.team-in-sync{
+ font-size: 18px;
+ font-weight: 350;
+ color: hsl(0, 0%, 41%);
+ text-align: center;
+ padding: 0 10px;
+}
+.learn-more-button{
+ display: flex;
+ justify-self: center;
+ border: none;
+ background-color: hsl(0, 0%, 8%);
+ color: hsl(0, 0%, 98%);
+ padding: 15px 25px;
+ border-radius: 10px;
+ font-size: 15px;
+ font-weight: 500;
+}
+.clients{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 30px 5px 150px 5px;
+}
+.client-databiz, .client-audiophile, .client-meet, .client-maker{
+ width: 60px;
+ height: 20px;
+}
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+}
+.attribution a { 
+ color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+ .hero-mobile-image{
+  width: 100%;
+ }
+ nav{
+  padding: 25px 15px;
+ }
+ .mobile-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .icon-menu{
+  justify-self: flex-end;
+ }
+ ul{
+  display: none; 
+ }
+}
+@media only screen and (min-width: 768px){
+ .mobile-logo, .icon-menu{
+  display: none;
+ }
+ 
+}
