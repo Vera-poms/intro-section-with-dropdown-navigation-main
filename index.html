@@ -17,17 +17,20 @@
     <img src="images/logo.svg" alt="snap-logo" class="snap-logo">
     
    <ul class="options-desktop">
-    <li>Features</li>
-    <li>Company</li>
-    <li>Careers</li>
-    <li>About</li>
-    <button>Login</button>
-    <button>Register</button>
+    <div class="links">
+      <li><a href="#features">Features</a> <span class="features-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></li>
+    <li><a href="#company">Company</a> <span class="company-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#about">About</a></li>
+    </div>
+   <div class="buttons">
+    <button class="login-button-desktop"><a href="#login">Login</a></button>
+    <button class="register-button-desktop"><a href="register">Register</a></button>
+   </div>
    </ul>
 
    <div class="icon-menu-mobile">
     <img src="images/icon-menu.svg" alt="icon-menu" class="icon-open-mobile js-icon-open">
-    <!-- <img src="images/icon-close-menu.svg" alt="close-image" class="icon-close-mobile js-icon-close"> -->
     <ul class="options-mobile js-options-mobile">
       <img src="images/icon-close-menu.svg" alt="close-image" class="icon-close-mobile js-icon-close">
       <li class="features-link">Features 
@@ -52,31 +55,33 @@
    </div>
   </nav>
   
-  <main>
+  <main class="main-page">
     <picture>
-      <source media="(min-width: 768px)" srcset=" images/image-hero-desktop.png">
-      <img src="/images/image-hero-mobile.png" alt="desktop-hero" class="hero-mobile-image">
+      <source media="(min-width:850px)" srcset="images/image-hero-desktop.png" class="hero-desktop-image">
+      <img src="images/image-hero-mobile.png" alt="hero-mobile" class="hero-mobile-image">
     </picture>
-    <section>
-      <h1 class="make-remote-work">
-        Make remote work
-      </h1>
-
-      <p class="team-in-sync">
-        Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
-      </p>
-      
-      <button class="learn-more-button">
-        Learn more
-      </button>
+    <section class="major-and-others">
+      <section class="text-major">
+        <h1 class="make-remote-work">
+          Make remote work
+        </h1>
+  
+        <p class="team-in-sync">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        
+        <button class="learn-more-button">
+          Learn more
+        </button>
+      </section>
+      <div class="clients">
+        <img src="images/client-databiz.svg" alt="databiz" class="client-databiz">
+        <img src="images/client-audiophile.svg" alt="audiophile" class="client-audiophile">
+        <img src="images/client-meet.svg" alt="meet" class="client-meet">
+        <img src="images/client-maker.svg" alt="maker" class="client-maker">
+      </div>
     </section>
-    <div class="clients">
-      <img src="images/client-databiz.svg" alt="databiz" class="client-databiz">
-      <img src="images/client-audiophile.svg" alt="audiophile" class="client-audiophile">
-      <img src="images/client-meet.svg" alt="meet" class="client-meet">
-      <img src="images/client-maker.svg" alt="maker" class="client-maker">
-    </div>
   </main>
   
   <div class="attribution">
