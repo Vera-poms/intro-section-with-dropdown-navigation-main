@@ -1,6 +1,5 @@
 body{
  font-family: "Roboto", serif;
- /* margin-right: 0px; */
 }
 .make-remote-work{
  text-align: center;
@@ -79,20 +78,35 @@ body{
  width: 100%;
  padding-top: 20px;
 }
-/* .options-desktop{
- position: fixed;
-} */
-
 .features-dropdown{
- display: block;
- list-style-type: none;
  position: absolute;
- top: 70px;
+ top: 50px;
  left: 110px;
+}
+.company-dropdown{
+ position: absolute;
+ top: 50px;
+ left: 270px;
+}
+.features-dropdown, .company-dropdown {
+ display: none;
+ list-style-type: none;
  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.05);
  border-radius: 10px;
  padding: 20px 0 20px 20px;
  font-size: 12px;
+}
+.features-arrow-up{
+ display: none;
+ position: absolute;
+ top: 35px;
+ left: 218px;
+}
+.company-arrow-up{
+ display: none;
+ position: absolute;
+ top: 35px;
+ left: 330px;
 }
 
 
@@ -150,6 +164,8 @@ body{
   padding: 70px 5px 0px 15px;
  }
 }
+
+
 @media (min-width: 850px){
  .icon-open-mobile, .icon-close-mobile{
   display: none;
@@ -175,12 +191,17 @@ body{
   display: flex;
   color: hsl(0, 0%, 41%);
  }
+ .arrows-up{
+  display: inline-block;
+ }
  .arrows-down{
   display: none;
  }
- .arrows-up{
-  display: block;
- }
+ 
+.dropdown-displayed{
+ display: block;
+}
+ 
  li{
   padding-right: 30px;
  }
@@ -205,6 +226,7 @@ body{
  color: black;
  border: 1px solid black;
 }
+
  .main-page{
   display: flex;
   flex-direction: row-reverse;
