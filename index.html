@@ -18,14 +18,49 @@
     
    <ul class="options-desktop">
     <div class="links">
-      <li><a href="#features">Features</a> <span class="features-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></li>
-    <li><a href="#company">Company</a> <span class="company-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down"></li>
+      <li class="features js-features">
+        <a href="#features">Features</a> 
+        <span class="features-arrow-down">
+          <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down js-arrow-down">
+          <img src="images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up js-arrow-up">
+        </span>
+          
+          <ul class="features-dropdown js-dropdowns">
+            <li>
+            <img src="images/icon-todo.svg" alt="todo-list"> 
+             Todo List
+            </li>
+            <li>
+            <img src="images/icon-calendar.svg" alt="calendar">  
+            Calendar
+            </li>
+            <li>
+            <img src="images/icon-reminders.svg" alt="reminders">  
+            Reminders
+            </li>
+            <li>
+            <img src="images/icon-planning.svg" alt="">  
+            Planning
+            </li>
+          </ul>
+        </li>
+    <li class="company js-company">
+      <a href="#company">Company</a> 
+      <span class="company-arrow-down">
+        <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down js-arrow-down">
+        <img src="images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up js-arrow-up">
+        <ul class="dropdown js-dropdowns">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </li>
     <li><a href="#careers">Careers</a></li>
     <li><a href="#about">About</a></li>
     </div>
    <div class="buttons">
     <button class="login-button-desktop"><a href="#login">Login</a></button>
-    <button class="register-button-desktop"><a href="register">Register</a></button>
+    <button class="register-button-desktop"><a href="#register">Register</a></button>
    </div>
    </ul>
 

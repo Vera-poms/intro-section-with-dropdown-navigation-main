@@ -74,14 +74,26 @@ body{
  font-size: 15px;
  color: hsl(0, 0%, 41%);
 }
-/* .hero-mobile-image{
- display: none;
-} */
+
 .hero-mobile-image{
  width: 100%;
  padding-top: 20px;
 }
+/* .options-desktop{
+ position: fixed;
+} */
 
+.features-dropdown{
+ display: block;
+ list-style-type: none;
+ position: absolute;
+ top: 70px;
+ left: 110px;
+ box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.05);
+ border-radius: 10px;
+ padding: 20px 0 20px 20px;
+ font-size: 12px;
+}
 
 
 @media (max-width: 849px) {
@@ -148,9 +160,6 @@ body{
  .all-header-section{
   display: flex;
   padding-top: 20px;
-  /* position: fixed; */
-  /* justify-content: space-evenly;
-  align-items: center; */
  }
  .snap-logo{
   align-self: center;
@@ -165,7 +174,12 @@ body{
  .links{
   display: flex;
   color: hsl(0, 0%, 41%);
-  /* margin-right: 100px; */
+ }
+ .arrows-down{
+  display: none;
+ }
+ .arrows-up{
+  display: block;
  }
  li{
   padding-right: 30px;
