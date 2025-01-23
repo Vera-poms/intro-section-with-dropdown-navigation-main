@@ -99,13 +99,13 @@ featuresLink.addEventListener('click', () => {
 companyLink.addEventListener('click', () => {
   if(!isHovered){
     isHovered = true
-    companyArrowDown.classList.add('arrows-down')
-    companyArrowUp.classList.add('arrows-up')
-    displayCompanyDropdown.classList.add('dropdown-displayed')
+    companyArrowDown.classList.add('company-arrows-down')
+    companyArrowUp.classList.add('company-arrows-up')
+    displayCompanyDropdown.classList.add('company-dropdown-displayed')
   }else{
     isHovered = false
-    companyArrowUp.classList.remove('arrows-up')
-    companyArrowDown.classList.remove('arrows-down')
-    displayCompanyDropdown.classList.remove('dropdown-displayed')
+    companyArrowUp.classList.remove('company-arrows-up')
+    companyArrowDown.classList.remove('company-arrows-down')
+    displayCompanyDropdown.classList.remove('company-dropdown-displayed')
   } 
 })

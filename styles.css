@@ -86,15 +86,10 @@ body{
 }
 .features-arrow-up{
  display: none;
- position: absolute;
- top: 28px;
- left: 210px;
 }
+
 .company-arrow-up{
  display: none;
- position: absolute;
- top: 28px;
- left: 322px;
 }
 .listed-options{
  display: flex;
@@ -159,7 +154,7 @@ body{
   display: none;
  }
 
-.features-options, .company-options{
+.features-options{
   display: none;
   padding: 10px 30px;
 }
@@ -254,15 +249,17 @@ body{
   display: flex;
   color: hsl(0, 0%, 41%);
  }
- .arrows-up{
+ .arrows-up, .company-arrows-up{
   display: inline-block;
  }
- .arrows-down{
+ .arrows-down, .company-arrows-down{
   display: none;
  }
- 
 .dropdown-displayed{
  display: block;
+}
+.company-dropdown-displayed{
+  display: block;
 }
  
  li{
