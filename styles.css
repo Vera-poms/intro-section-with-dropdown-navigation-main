@@ -54,19 +54,7 @@ body{
  display: none;
 }
 
-.all-header-section .options-mobile{
- background-color: white;
- transition: width 0.25s;
- position: absolute;
- right: 0;
- top: 0;
- bottom: -300px;
- list-style-type: none;
- z-index: 100;
- display: none;
- color: hsl(0, 0%, 41%);
- width: 0px;
-}
+
 .login-button, .register-button{
  background-color: white;
  border: none;
@@ -91,7 +79,7 @@ body{
 .features-dropdown, .company-dropdown {
  display: none;
  list-style-type: none;
- box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.05);
+ box-shadow: 0px 0px  20px 25px rgba(4, 0, 0, 0.05);
  border-radius: 10px;
  padding: 20px 0 20px 20px;
  font-size: 12px;
@@ -99,16 +87,90 @@ body{
 .features-arrow-up{
  display: none;
  position: absolute;
- top: 35px;
- left: 218px;
+ top: 28px;
+ left: 210px;
 }
 .company-arrow-up{
  display: none;
  position: absolute;
- top: 35px;
- left: 330px;
+ top: 28px;
+ left: 322px;
+}
+.listed-options{
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ padding-bottom: 7px;
+ color: hsl(0, 0%, 41%);
+}
+.company-options{
+ padding-bottom: 7px;
+ color: hsl(0, 0%, 41%);
+}
+.options-mobile{
+ background-color: white;
+ transition: width 0.25s;
+ position: absolute;
+ right: 0;
+ top: 0;
+ bottom: -254px;
+ list-style-type: none;
+ z-index: 100;
+ display: none;
+ color: hsl(0, 0%, 41%);
+ width: 0px;
+ padding: 0;
+ opacity: 1;
+ visibility: visible;
+}
+.icon-open-mobile{
+ position: absolute;
+ right: 10px;
+ cursor: pointer;
+}
+.icon-close-mobile{
+ display: none;
+ position: absolute;
+ right: 17px;
+ top: 14px;
+ cursor: pointer;
+}
+/* .body-self{
+  filter: blur(10px);
+ opacity: 1;
+ visibility: visible;
+} */
+
+.company-link-mobile, .features-link-mobile{
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
 }
 
+.features-arrow-down-mobile{
+  padding-left: 6px;
+ }
+ .features-arrow-up-mobile{
+  display: none;
+ }
+ .company-arrow-down-mobile{
+  padding-left: 12px;
+ }
+ .company-arrow-up-mobile{
+  display: none;
+ }
+
+.features-options, .company-options{
+  display: none;
+  padding: 10px 30px;
+}
+.listed-options-mobile{
+  display: flex;
+  align-items: flex-end;
+}
+.listed-options-mobile img{
+  padding-right: 10px;
+}
+ 
 
 @media (max-width: 849px) {
  .all-header-section{
@@ -117,32 +179,12 @@ body{
   justify-content: space-between;
   padding: 25px 15px;
  }
- /* .hero-mobile-image{
-  width: 100%;
-  padding-top: 20px;
- } */
  .snap-logo{
   position: absolute;
  }
- .icon-open-mobile{
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
- }
- .icon-close-mobile{
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  cursor: pointer;
- }
+ 
  li{
   padding-bottom: 20px;
- }
- .features-arrow-down{
-  padding-left: 13px;
- }
- .company-arrow-down{
-  padding-left: 8px;
  }
  .login-button{
   margin-top: 20px;
@@ -154,28 +196,49 @@ body{
   border: 1px solid hsl(0, 0%, 41%);
   border-radius: 10px;
  }
- .all-header-section .options-mobile{
+.options-opened{
   display: block;
- }
- .all-header-section .options-opened{
+  padding: 70px 5px 0px 15px;
   width: 210px;
  }
- .options-mobile{
-  padding: 70px 5px 0px 15px;
+.closed-mobile{
+  display: block;
  }
+.arrow-down-mobile{
+  display: none;
+}
+.company-arrows-down-mobile{
+  display: none;
+}
+.arrow-up-mobile{
+  display: inline-block;
+}
+.company-arrows-up-mobile{
+  display: inline-block;
+}
+.features-options-displayed, .company-options-displayed{
+  display: block;
 }
 
+ /* .opacity-added{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+
+  opacity: 1; 
+  visibility: visible;
+ } */
+}
 
 @media (min-width: 850px){
- .icon-open-mobile, .icon-close-mobile{
+ .icon-open-mobile, .icon-close-mobile, .options-mobile{
   display: none;
- }
- .options-mobile{
-  display: none; 
  }
  .all-header-section{
   display: flex;
   padding-top: 20px;
+  position: relative;
  }
  .snap-logo{
   align-self: center;
@@ -226,8 +289,7 @@ body{
  color: black;
  border: 1px solid black;
 }
-
- .main-page{
+.main-page{
   display: flex;
   flex-direction: row-reverse;
   margin: 50px 110px 120px 110px;

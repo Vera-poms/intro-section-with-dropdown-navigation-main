@@ -12,18 +12,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-self js-body-self">
   <nav class="all-header-section">
     <img src="images/logo.svg" alt="snap-logo" class="snap-logo">
     
    <ul class="options-desktop">
     <div class="links">
       <li class="features">
-          <a href="#features" class="js-features">Features</a> 
+          <a href="#features" class="js-features">
+            Features 
+          </a>
           <span class="features-arrow">
             <img src="images/icon-arrow-down.svg" alt="arrow-down" class="features- arrow-down js-features-arrow-down">
             <img src="images/icon-arrow-up.svg" alt="arrow-up" class="features-arrow-up js-features-arrow-up">
           </span>
+        
       </li>
       <li class="company">
         <a href="#company" class="js-company">Company</a> 
@@ -48,18 +51,50 @@
     <img src="images/icon-menu.svg" alt="icon-menu" class="icon-open-mobile js-icon-open">
     <ul class="options-mobile js-options-mobile">
       <img src="images/icon-close-menu.svg" alt="close-image" class="icon-close-mobile js-icon-close">
-      <li class="features-link">Features 
-        <span class="features-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down">
-        </span>
-      </li>
-      <li class="company-link">Company
-        <span class="company-arrow-down"><img src="images/icon-arrow-down.svg" alt="arrow-down">
-        </span>
-      </li>
-      <li>
+      <a href="#features" class="features-link-mobile js-features-link-mobile">
+        <li class="features-link">
+          Features 
+          <span class="features-arrow-down-mobile">
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" class="features-arrow-down-mobile js-features-arrow-down-mobile">
+            <img src="images/icon-arrow-up.svg" alt="arrow-up" class="features-arrow-up-mobile js-features-arrow-up-mobile">
+          </span>
+        </li>
+      </a>
+      <div class="features-options js-features-options">
+        <li class="listed-options-mobile">
+          <img src="images/icon-todo.svg" alt="todo-list"> 
+          Todo List
+        </li>
+        <li class="listed-options-mobile">
+          <img src="images/icon-calendar.svg" alt="calendar">  
+          Calendar
+        </li>
+        <li class="listed-options-mobile">
+          <img src="images/icon-reminders.svg" alt="calendar">  
+          Reminders
+        </li>
+        <li class="listed-options-mobile">
+          <img src="images/icon-planning.svg" alt="planning">  
+          Planning
+        </li>
+      </div>
+      <a href="#company" class="company-link-mobile js-company-link-mobile">
+        <li class="company-link">Company
+          <span class="company-arrow-down">
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" class="company-arrow-down-mobile js-company-arrow-down-mobile">
+            <img src="images/icon-arrow-up.svg" alt="arrow-up" class="company-arrow-up-mobile  js-company-arrow-up-mobile">
+          </span>
+        </li>
+      </a>
+      <div class="company-options js-company-options">
+        <li class="company-options-mobile">History</li>
+        <li class="company-options-mobile">Our Team</li>
+        <li class="company-options-mobile">Blog</li>
+      </div>
+      <li class="careers-link">
         Careers
       </li>
-      <li>
+      <li class="about-link">
         About
       </li>
       <button class="login-button">Login</button>
@@ -71,27 +106,28 @@
   </nav>
 
     <ul class="features-dropdown js-features-dropdowns">
-      <li>
-      <img src="images/icon-todo.svg" alt="todo-list"> 
-      Todo List
+      <li class="listed-options">
+        <img src="images/icon-todo.svg" alt="todo-list"> 
+        Todo List
       </li>
-      <li>
-      <img src="images/icon-calendar.svg" alt="calendar">  
-      Calendar
+      <li class="listed-options">
+        <img src="images/icon-calendar.svg" alt="calendar">  
+        Calendar
       </li>
-      <li>
-      <img src="images/icon-reminders.svg" alt="reminders">  
-      Reminders
+      <li class="listed-options">
+        <img src="images/icon-reminders.svg" alt="calendar">  
+        Reminders
       </li>
-      <li>
-      <img src="images/icon-planning.svg" alt="">  
-      Planning
+      <li class="listed-options">
+        <img src="images/icon-planning.svg" alt="planning">  
+        Planning
       </li>
     </ul>
+
     <ul class="company-dropdown js-company-dropdowns">
-      <li>History</li>
-      <li>Our Team</li>
-      <li>Blog</li>
+      <li class="company-options">History</li>
+      <li class="company-options">Our Team</li>
+      <li class="company-options">Blog</li>
     </ul>
 
   
