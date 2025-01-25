@@ -292,9 +292,7 @@ body{
   }
 }
 
-
-
-@media (min-width: 680px){
+@media (min-width: 780px){
  .icon-open-mobile, .icon-close-mobile, .options-mobile{
   display: none;
  }
@@ -376,13 +374,6 @@ body{
    flex: 1;
    margin-right: 100px;
   }
-  /* .make-remote-work{
-   font-size: 90px;
-  }
-  .team-in-sync{
-   font-size: 24px;
-   padding-left: 0;
-  } */
  .make-remote-work, .team-in-sync{
   text-align: left;
  }
@@ -422,48 +413,6 @@ body{
   color: black;
   cursor: pointer;
  }
-}
-
-@media(min-width: 680px) and (max-width: 780px){
-  .all-header-section, .login-button-desktop, .register-button-desktop{
-    font-size: 14px;
-  }
-  .buttons-section{
-    top: 7px;
-  }
-  .register-button-desktop{
-    padding: 7px 15px;
-    border-radius: 11px;
-  }
-  .hero-mobile-image{
-    height: 72%;
-   }
-   .main-page{
-    margin: 94px 35px 40px 35px;
-   }
-   .major-and-others{
-    margin-right: 28px;
-   }
-   .make-remote-work{
-    font-size: 43px;
-   }
-   .team-in-sync{
-    font-size: 15px;
-    padding: 0;
-   }
-   .learn-more-button{
-    margin-top: 45px;
-    padding: 13px 22px;
-    border-radius: 11px;
-    font-size: 14px;
-   }
-   .learn-more-button:hover{
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    font-weight: bold;
-   }
-   
 }
 
 @media(min-width: 946px) and (max-width: 1060px) {
