@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://intro-section-vera-poms.netlify.app)
-- Live Site URL: [Add live site URL here](https://intro-section-vera-poms.netlify.app)
+- Solution URL: (https://intro-section-vera-poms.netlify.app)
+- Live Site URL: (https://intro-section-vera-poms.netlify.app)
 
 
 ### Built with
@@ -54,5 +54,5 @@ I hope to make it more user-friendly with transitions to see the options both in
 
 ## Author
 
-- Website - [Vera Ama Pomaa]
+- Vera Ama Pomaa
 - Frontend Mentor - [@Vera-poms](https://www.frontendmentor.io/profile/vera-poms)
