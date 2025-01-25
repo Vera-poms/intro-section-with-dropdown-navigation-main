@@ -169,7 +169,7 @@ body{
  }
  .register-button{
   width: 85%;
-  height: 8%;
+  height: 6%;
   border: 1px solid hsl(0, 0%, 41%);
   border-radius: 10px;
  }
@@ -181,7 +181,7 @@ body{
   z-index: -1;
  } */
 
- @media (max-width: 679px) {
+ @media (max-width: 780px) {
   .all-header-section{
    display: flex;
    flex-direction: row;
@@ -256,9 +256,9 @@ body{
     border-radius: 15px;
   }
 }
-@media (min-width: 601px) and (max-width: 679px){
+@media (min-width: 601px) and (max-width: 780px){
   .make-remote-work{
-    font-size: 52px;
+    font-size: 60px;
   }
   .team-in-sync{
     font-size: 21px;
