@@ -25,6 +25,7 @@ body{
  border-radius: 15px;
  font-size: 15px;
  font-weight: 500;
+ margin: 25px 0;
 }
 .clients{
  display: flex;
@@ -180,6 +181,62 @@ body{
   z-index: -1;
  } */
 
+ @media (max-width: 679px) {
+  .all-header-section{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 25px 15px;
+  }
+  .snap-logo{
+   position: absolute;
+  }
+  
+  li{
+   padding-bottom: 20px;
+  }
+  
+  .login-button{
+   margin-top: 20px;
+   display: block;
+   padding: 12px 80px 12px 80px;
+  }
+ 
+  
+ .options-opened{
+   display: block;
+   padding: 90px 5px 0px 15px;
+   width: 60%;
+   transition: width 1ms linear 3ms;
+   margin: 0;
+  }
+ .closed-mobile{
+   display: block;
+  }
+ .arrow-down-mobile{
+   display: none;
+ }
+ .company-arrows-down-mobile{
+   display: none;
+ }
+ .arrow-up-mobile{
+   display: inline-block;
+ }
+ .company-arrows-up-mobile{
+   display: inline-block;
+ }
+ .features-options-displayed{
+   display: block;
+ }
+ .company-options-displayed{
+   display: block;
+ }
+ 
+  /* .opacity-added{
+   opacity: 1; 
+  } */
+ }
+
 @media (min-width: 500px) and (max-width: 600px){
   .make-remote-work{
     font-size: 45px;
@@ -195,7 +252,8 @@ body{
     font-size: 22px;
   }
   .register-button{
-    height: 10%;
+    height: 9%;
+    border-radius: 15px;
   }
 }
 @media (min-width: 601px) and (max-width: 679px){
@@ -213,7 +271,8 @@ body{
     font-size: 24px;
   }
   .register-button{
-    height: 12%;
+    height: 10%;
+    border-radius: 17px;
   }
 }
 @media (min-width: 781px) and (max-width: 945px){
@@ -233,61 +292,7 @@ body{
   }
 }
 
-@media (max-width: 679px) {
- .all-header-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 25px 15px;
- }
- .snap-logo{
-  position: absolute;
- }
- 
- li{
-  padding-bottom: 20px;
- }
- 
- .login-button{
-  margin-top: 20px;
-  display: block;
-  padding: 12px 80px 12px 80px;
- }
 
- 
-.options-opened{
-  display: block;
-  padding: 90px 5px 0px 15px;
-  width: 60%;
-  transition: width 1ms linear 3ms;
-  margin: 0;
- }
-.closed-mobile{
-  display: block;
- }
-.arrow-down-mobile{
-  display: none;
-}
-.company-arrows-down-mobile{
-  display: none;
-}
-.arrow-up-mobile{
-  display: inline-block;
-}
-.company-arrows-up-mobile{
-  display: inline-block;
-}
-.features-options-displayed{
-  display: block;
-}
-.company-options-displayed{
-  display: block;
-}
-
- /* .opacity-added{
-  opacity: 1; 
- } */
-}
 
 @media (min-width: 680px){
  .icon-open-mobile, .icon-close-mobile, .options-mobile{
@@ -466,7 +471,7 @@ body{
     height: 75%;
    }
    .make-remote-work{
-    font-size: 60px;
+    font-size: 55px;
    }
    .team-in-sync{
     font-size: 17px;
@@ -480,19 +485,76 @@ body{
     padding: 16px 17px;
    }
 }
-@media(min-width: 1061px){
+@media(min-width: 1061px) and (max-width: 1200px){
+  .hero-mobile-image{
+    height: 78%;
+   }
   .make-remote-work{
     font-size: 70px;
    }
    .team-in-sync{
     font-size: 16px;
-    padding-right: 180px;
+    padding-right: 50px;
     padding-left: 0;
    }
    .main-page{
     margin: 90px 80px 120px 80px;
    }
+   .major-and-others{
+    margin-right: 65px;
+   }
    .learn-more-button{
     margin-top: 40px;
+   }
+   .clients{
+    margin-right: 30px;
+   }
+}
+@media(min-width: 1201px){
+  .all-header-section, .register-button-desktop, .login-button-desktop{
+    font-size: 18px;
+  }
+  .register-button-desktop{
+    padding: 10px 20px;
+  }
+  .hero-mobile-image{
+    height: 82%;
+   }
+  .make-remote-work{
+    font-size: 91px;
+  }
+  .team-in-sync{
+    font-size: 23px;
+    padding-left: 0;
+  }
+  .main-page{
+    margin: 90px 120px 120px 120px;
+   }
+   .major-and-others{
+    margin-right: 113px;
+   }
+   .learn-more-button{
+    margin-top: 50px;
+    padding: 20px 35px;
+    font-size: 20px;
+   }
+   .clients{
+    margin-right: 35px;
+   }
+   .client-databiz{
+    width: 125px;
+    height: 24px;
+   }
+   .client-audiophile{
+    width: 76px;
+    height: 36px;
+   }
+   .client-meet{
+    width: 101px;
+    height: 26px;
+   }
+   .client-maker{
+    width: 97px;
+    height: 30px;
    }
 }
