@@ -13,13 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="body-self js-body-self">
+  <!-- <img src="images/logo.svg" alt="snap-logo" class="snap-logo"> -->
   <nav class="all-header-section">
     <img src="images/logo.svg" alt="snap-logo" class="snap-logo">
     
    <ul class="options-desktop">
-    <div class="links">
-      
-      <a href="#features" class="js-features">
+    <div class="links">    
+      <a href="#features" class="features-link js-features">
         <li class="features">
           Features 
           <span class="features-arrow">
@@ -28,7 +28,7 @@
           </span>
         </li>
       </a>
-      <a href="#company" class="js-company">
+      <a href="#company" class="company-link js-company">
         <li class="company">
           Company
           <span class="company-arrow-down">
@@ -86,7 +86,7 @@
           </span>
         </li>
       </a>
-      <div class="company-options js-company-options">
+      <div class="company-optionss-mobile js-company-options">
         <li class="company-options-mobile">History</li>
         <li class="company-options-mobile">Our Team</li>
         <li class="company-options-mobile">Blog</li>
@@ -97,8 +97,10 @@
       <li class="about-link">
         About
       </li>
-      <button class="login-button">Login</button>
-      <button class="register-button">Register</button>
+      <div class="buttons-section">
+        <button class="login-button">Login</button>
+        <button class="register-button">Register</button>
+      </div>
      </ul>
     </div>
    
@@ -133,7 +135,7 @@
   
   <main class="main-page">
     <picture>
-      <source media="(min-width:850px)" srcset="images/image-hero-desktop.png" class="hero-desktop-image">
+      <source media="(min-width:680px)" srcset="images/image-hero-desktop.png" class="hero-desktop-image">
       <img src="images/image-hero-mobile.png" alt="hero-mobile" class="hero-mobile-image">
     </picture>
     <section class="major-and-others">

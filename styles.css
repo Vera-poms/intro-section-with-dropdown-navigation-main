@@ -1,5 +1,6 @@
 body{
  font-family: "Roboto", serif;
+ position: relative;
 }
 .make-remote-work{
  text-align: center;
@@ -104,7 +105,6 @@ body{
 }
 .options-mobile{
  background-color: white;
- transition: width 0.25s;
  position: absolute;
  right: 0;
  top: 0;
@@ -121,20 +121,15 @@ body{
 .icon-open-mobile{
  position: absolute;
  right: 10px;
- cursor: pointer;
 }
 .icon-close-mobile{
  display: none;
  position: absolute;
  right: 17px;
  top: 14px;
- cursor: pointer;
+ padding-top: 20px;
 }
-/* .body-self{
-  filter: blur(10px);
- opacity: 1;
- visibility: visible;
-} */
+
 
 .company-link-mobile, .features-link-mobile{
   text-decoration: none;
@@ -154,7 +149,7 @@ body{
   display: none;
  }
 
-.features-options{
+.features-options, .company-optionss-mobile{
   display: none;
   padding: 10px 30px;
 }
@@ -165,9 +160,80 @@ body{
 .listed-options-mobile img{
   padding-right: 10px;
 }
- 
+.buttons-section{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+ }
+ .register-button{
+  width: 85%;
+  height: 8%;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+ }
 
-@media (max-width: 849px) {
+/* .body-self{
+  filter: blur(5px);
+  opacity: 0.8;
+  visibility: visible;
+  z-index: -1;
+ } */
+
+@media (min-width: 500px) and (max-width: 600px){
+  .make-remote-work{
+    font-size: 45px;
+  }
+  .team-in-sync{
+    font-size: 19px;
+  }
+  .learn-more-button{
+    padding: 20px 30px;
+    font-size: 17px;
+  }
+  .options-opened, .login-button, .register-button{
+    font-size: 22px;
+  }
+  .register-button{
+    height: 10%;
+  }
+}
+@media (min-width: 601px) and (max-width: 679px){
+  .make-remote-work{
+    font-size: 52px;
+  }
+  .team-in-sync{
+    font-size: 21px;
+  }
+  .learn-more-button{
+    padding: 25px 40px;
+    font-size: 19px;
+  }
+  .options-opened, .login-button, .register-button{
+    font-size: 24px;
+  }
+  .register-button{
+    height: 12%;
+  }
+}
+@media (min-width: 781px) and (max-width: 945px){
+  .all-header-section{
+    font-size: 15px;
+   }
+  .make-remote-work{
+    font-size: 51px;
+  }
+  .team-in-sync{
+    font-size: 16px;
+    padding: 0;
+  }
+  .learn-more-button{
+    padding: 16px 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 679px) {
  .all-header-section{
   display: flex;
   flex-direction: row;
@@ -181,20 +247,20 @@ body{
  li{
   padding-bottom: 20px;
  }
+ 
  .login-button{
   margin-top: 20px;
   display: block;
   padding: 12px 80px 12px 80px;
  }
- .register-button{
-  padding: 10px 70px 10px 70px;
-  border: 1px solid hsl(0, 0%, 41%);
-  border-radius: 10px;
- }
+
+ 
 .options-opened{
   display: block;
-  padding: 70px 5px 0px 15px;
-  width: 210px;
+  padding: 90px 5px 0px 15px;
+  width: 60%;
+  transition: width 1ms linear 3ms;
+  margin: 0;
  }
 .closed-mobile{
   display: block;
@@ -211,22 +277,19 @@ body{
 .company-arrows-up-mobile{
   display: inline-block;
 }
-.features-options-displayed, .company-options-displayed{
+.features-options-displayed{
+  display: block;
+}
+.company-options-displayed{
   display: block;
 }
 
  /* .opacity-added{
-  filter: blur(20px);
-  pointer-events: none;
-  user-select: none;
-  z-index: -1;
-
   opacity: 1; 
-  visibility: visible;
  } */
 }
 
-@media (min-width: 850px){
+@media (min-width: 680px){
  .icon-open-mobile, .icon-close-mobile, .options-mobile{
   display: none;
  }
@@ -234,6 +297,7 @@ body{
   display: flex;
   padding-top: 20px;
   position: relative;
+  font-size: 15px;
  }
  .snap-logo{
   align-self: center;
@@ -289,7 +353,8 @@ body{
 .main-page{
   display: flex;
   flex-direction: row-reverse;
-  margin: 50px 110px 120px 110px;
+  margin: 94px 35px 40px 35px;
+
  }
   picture{
    display: flex;
@@ -297,7 +362,7 @@ body{
   }
   .hero-mobile-image{
    width: 100%;
-   height: 78%;
+   height: 72%;
    padding-top: 0;
   }
   .major-and-others{
@@ -306,21 +371,19 @@ body{
    flex: 1;
    margin-right: 100px;
   }
-  .make-remote-work{
+  /* .make-remote-work{
    font-size: 90px;
   }
   .team-in-sync{
    font-size: 24px;
    padding-left: 0;
-  }
+  } */
  .make-remote-work, .team-in-sync{
   text-align: left;
  }
  .learn-more-button{
   justify-self: flex-start;
   margin-top: 60px;
-  font-size: 25px;
-  padding: 20px 30px;
  }
  .learn-more-button:hover{
   background-color: white;
@@ -329,9 +392,21 @@ body{
   font-weight: bold;
  }
  .clients{
-  margin: 50px 50px 30px 0;
+  margin: 50px 40px 0 0;
  }
- button, li{
+ .client-databiz{
+  width: 52px;
+  height: 15px;
+ }
+ .client-audiophile{
+  width: 42px;
+  height: 17px;
+ }
+ .client-meet{
+  width: 54px;
+  height: 17px;
+ }
+ button{
   cursor: pointer;
  }
  a{
@@ -340,5 +415,84 @@ body{
  }
  a:hover{
   color: black;
+  cursor: pointer;
  }
+}
+
+@media(min-width: 680px) and (max-width: 780px){
+  .all-header-section, .login-button-desktop, .register-button-desktop{
+    font-size: 14px;
+  }
+  .buttons-section{
+    top: 7px;
+  }
+  .register-button-desktop{
+    padding: 7px 15px;
+    border-radius: 11px;
+  }
+  .hero-mobile-image{
+    height: 72%;
+   }
+   .main-page{
+    margin: 94px 35px 40px 35px;
+   }
+   .major-and-others{
+    margin-right: 28px;
+   }
+   .make-remote-work{
+    font-size: 43px;
+   }
+   .team-in-sync{
+    font-size: 15px;
+    padding: 0;
+   }
+   .learn-more-button{
+    margin-top: 45px;
+    padding: 13px 22px;
+    border-radius: 11px;
+    font-size: 14px;
+   }
+   .learn-more-button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+   }
+   
+}
+
+@media(min-width: 946px) and (max-width: 1060px) {
+  .hero-mobile-image{
+    height: 75%;
+   }
+   .make-remote-work{
+    font-size: 60px;
+   }
+   .team-in-sync{
+    font-size: 17px;
+    padding-left: 0;
+   }
+   .main-page{
+    margin: 90px 80px 120px 80px;
+   }
+   .learn-more-button{
+    font-size: 19px;
+    padding: 16px 17px;
+   }
+}
+@media(min-width: 1061px){
+  .make-remote-work{
+    font-size: 70px;
+   }
+   .team-in-sync{
+    font-size: 16px;
+    padding-right: 180px;
+    padding-left: 0;
+   }
+   .main-page{
+    margin: 90px 80px 120px 80px;
+   }
+   .learn-more-button{
+    margin-top: 40px;
+   }
 }
