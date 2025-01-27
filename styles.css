@@ -1,5 +1,5 @@
 body{
- font-family: "Roboto", serif;
+ font-family: "Epilogue", serif;
  position: relative;
 }
 .make-remote-work{
@@ -26,6 +26,12 @@ body{
  font-size: 15px;
  font-weight: 500;
  margin: 25px 0;
+ border: 1px solid transparent;
+}
+.learn-more-button:active{
+  color: black;
+  border-color: black;
+  background-color: hsl(0, 0%, 98%);
 }
 .clients{
  display: flex;
@@ -264,6 +270,7 @@ body{
     font-size: 21px;
   }
   .learn-more-button{
+    justify-self: center;
     padding: 25px 40px;
     font-size: 19px;
   }
@@ -379,11 +386,12 @@ body{
  }
  .learn-more-button{
   justify-self: flex-start;
+  border: 1px solid transparent;
   margin-top: 60px;
  }
  .learn-more-button:hover{
   background-color: white;
-  border: 1px solid black;
+  border-color: black;
   color: black;
   font-weight: bold;
  }

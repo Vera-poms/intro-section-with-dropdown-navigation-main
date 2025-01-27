@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://intro-section-vera-poms.netlify.app)
+- Solution URL: (https://github.com/Vera-poms/intro-section-with-dropdown-navigation-main?tab=readme-ov-file)
 - Live Site URL: (https://intro-section-vera-poms.netlify.app)
 
 
