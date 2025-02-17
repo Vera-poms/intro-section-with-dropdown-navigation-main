@@ -113,18 +113,17 @@ body{
 }
 .options-mobile{
  background-color: white;
- position: absolute;
+ position: fixed;
  right: 0;
  top: 0;
- bottom: -254px;
  list-style-type: none;
  z-index: 100;
  display: none;
  color: hsl(0, 0%, 41%);
- width: 0px;
- padding: 0;
- opacity: 1;
- visibility: visible;
+ width: 60%;
+ height: 100vh;
+ padding: 90px 5px 0px 15px;
+ margin: 0;
 }
 .icon-open-mobile{
  position: absolute;
@@ -212,10 +211,6 @@ body{
   
  .options-opened{
    display: block;
-   padding: 90px 5px 0px 15px;
-   width: 60%;
-   transition: width 1ms linear 3ms;
-   margin: 0;
   }
  .closed-mobile{
    display: block;
