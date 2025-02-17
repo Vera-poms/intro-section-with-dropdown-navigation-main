@@ -300,7 +300,7 @@ body{
   }
 }
 
-@media (min-width: 780px){
+@media (min-width: 781px){
  .icon-open-mobile, .icon-close-mobile, .options-mobile{
   display: none;
  }
@@ -317,10 +317,10 @@ body{
  .options-desktop{
   display: flex;
   justify-content: space-between;
-  list-style-type: none;
   margin-top: 0;
  }
  .links{
+  list-style-type: none;
   display: flex;
   color: hsl(0, 0%, 41%);
  }
@@ -356,6 +356,9 @@ body{
 .login-button-desktop, .register-button-desktop{
  color: hsl(0, 0%, 41%);
  background-color: white;
+}
+.login-button-desktop:hover{
+ color: black;
 }
 .register-button-desktop:hover{
  color: black;
